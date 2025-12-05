@@ -226,7 +226,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 #	}
 #}
 
-bindsym $mod+shift+x exec i3lock
+bindsym $mod+x exec --no-startup-id i3lock -i /home/samyak/Pictures/wallpaper.jpg
 
 # Brightness controls on F6 and F7
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
@@ -238,7 +238,7 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
   bindsym r exec systemctl reboot
 
-  bindsym s exec systemctl shutdown
+  bindsym s exec systemctl poweroff
 
   bindsym Escape mode "default"
 
@@ -246,7 +246,11 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
 }
 
-bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+bindsym $mod+Shift+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
+bindsym $mod+Shift+q exec shutdown -h now
+bindsym $mod+c exec --no-startup-id exec nemo
 
-bindsym $mod+b exec xrandr --output eDP-1 --gamma 1:1:0.2
+bindsym $mod+b exec xrandr --output eDP-1 --gamma 1:0.8:0.4
+bindsym $mod+Shift+b exec xrandr --output eDP-1 --gamma 1:1:1
+
 
