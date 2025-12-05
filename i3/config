@@ -262,3 +262,15 @@ bindsym $mod+Shift+b exec xrandr --output eDP-1 --gamma 1:1:1
 
 bindsym $mod+space exec --no-startup-id rofi -show drun
 
+# Full screen screenshot (save to ~/Pictures)
+bindsym Print exec --no-startup-id maim ~/Pictures/screenshot_$(date +%Y-%m-%d_%H%M%S).png
+
+# Active window
+bindsym $mod+Print exec --no-startup-id maim -i $(xdotool getactivewindow) ~/Pictures/screenshot_$(date +%Y-%m-%d_%H%M%S).png
+
+# Select region
+bindsym Shift+Print exec --no-startup-id maim -s ~/Pictures/screenshot_$(date +%Y-%m-%d_%H%M%S).png
+
+# Region to clipboard
+bindsym $mod+Shift+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot copied to clipboard"
+
