@@ -251,6 +251,12 @@ bindsym $mod+Shift+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 bindsym $mod+Shift+q exec shutdown -h now
 bindsym $mod+c exec --no-startup-id exec nemo
 
+# Gaps
+gaps inner 10
+gaps outer 0
+gaps top -5
+smart_gaps on
+
 bindsym $mod+b exec xrandr --output eDP-1 --gamma 1:0.8:0.4
 bindsym $mod+Shift+b exec xrandr --output eDP-1 --gamma 1:1:1
 
