@@ -23,11 +23,10 @@ font pango:monospace 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id feh --bg-fill /home/samyak/Pictures/wallpaper.jpg
-exec_always ~/.config/polybar/launch.sh
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 #exec --no-startup-id redshift -l 4.43333:11.23333
-for_window [class="Ulauncher"] floating enable, border none
-
+for_window [class="Ulauncher"] floating enable, border pixel 0
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -49,6 +48,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+focus_follows_mouse no
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
@@ -226,7 +227,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 #	}
 #}
 
-bindsym $mod+x exec --no-startup-id i3lock -i /home/samyak/Pictures/wallpaper.jpg
+bindsym $mod+x exec --no-startup-id i3lock -i /home/samyak/Pictures/wallpaper.png
 
 # Brightness controls on F6 and F7
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
