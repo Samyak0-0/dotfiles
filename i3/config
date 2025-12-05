@@ -112,7 +112,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+d focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -249,7 +249,7 @@ mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
 
 bindsym $mod+Shift+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 bindsym $mod+Shift+q exec shutdown -h now
-bindsym $mod+c exec --no-startup-id exec nemo
+bindsym $mod+c exec --no-startup-id nemo
 
 # Gaps
 gaps inner 10
@@ -260,4 +260,5 @@ smart_gaps on
 bindsym $mod+b exec xrandr --output eDP-1 --gamma 1:0.8:0.4
 bindsym $mod+Shift+b exec xrandr --output eDP-1 --gamma 1:1:1
 
+bindsym $mod+space exec --no-startup-id rofi -show drun
 
