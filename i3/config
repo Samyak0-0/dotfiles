@@ -274,3 +274,5 @@ bindsym Shift+Print exec --no-startup-id maim -s ~/Pictures/screenshot_$(date +%
 # Region to clipboard
 bindsym $mod+Shift+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot copied to clipboard"
 
+bindsym $mod+z exec --no-startup-id rofi -show emoji
+

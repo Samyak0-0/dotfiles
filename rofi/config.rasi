@@ -17,7 +17,7 @@
 }
 
 configuration {
-    modi: ["drun","run"];
+    modi: ["drun","run","emoji"];
     show-icons: true;
     display-drun: "";
 }
