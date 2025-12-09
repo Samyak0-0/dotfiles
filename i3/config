@@ -26,6 +26,8 @@ exec --no-startup-id feh --bg-fill /home/samyak/Pictures/wallpaper.jpg
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id autotiling -w 1 2
+exec_always --no-startup-id xinput set-prop $(xinput list --id-only "$(xinput list --name-only | grep -i touchpad | head -n1)") "libinput Natural Scrolling Enabled" 1
+exec_always --no-startup-id xinput set-prop $(xinput list --id-only "$(xinput list --name-only | grep -i touchpad | head -n1)") "libinput Scrolling Pixel Distance" 40
 #exec --no-startup-id redshift -l 4.43333:11.23333
 for_window [class="Ulauncher"] floating enable, border pixel 0
 
