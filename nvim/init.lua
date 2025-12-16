@@ -1,3 +1,5 @@
+require("omnitrix")
+-- require("plugins")
 require("config.lazy")
-print("omnitrix")
-print("hello world")
+
+print("hello")
