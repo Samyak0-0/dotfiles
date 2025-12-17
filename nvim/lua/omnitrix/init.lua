@@ -1,2 +1,2 @@
 require("omnitrix.remap")
-print("omnitrix.set")
+require("omnitrix.set")
