@@ -13,6 +13,8 @@ return {
       "jsdoc",
       "bash",
       "go",
+      "dart",
+      "markdown"
     },
 
     sync_install = false,
