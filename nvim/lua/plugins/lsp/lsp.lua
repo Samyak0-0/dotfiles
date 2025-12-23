@@ -35,7 +35,7 @@ return {
       })
 
       vim.lsp.enable("pyright")
-      vim.lsp.enable("flutter-tools")
+      --vim.lsp.enable("flutter-tools")
 
       -- Diagnostics UI
       vim.diagnostic.config({
