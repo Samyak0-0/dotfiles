@@ -1,9 +1,12 @@
 vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>r', '<C-r>')
+vim.keymap.set('n', '<leader>w', '<C-w>')
 vim.keymap.set('n', '<leader>Q', vim.cmd.q)
 vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle)
-vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
+vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
+
+vim.keymap.set('n', '<leader>c', 'gcc', { remap = true })
 
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
@@ -12,7 +15,7 @@ vim.keymap.set('n', '<leader>dd', '"_dd')
 vim.keymap.set('v', '<leader>d', '"_d')
 
 -- Toggle line wrapping with <leader>w
-vim.keymap.set('n', '<leader>w', ':set wrap!<CR>', { desc = 'Toggle word wrap' })
+vim.keymap.set('n', '<leader>o', ':set wrap!<CR>', { desc = 'Toggle word wrap', silent = true })
 
 -- Optional: You can also toggle the 'linebreak' and 'showbreak' options for better control
 -- 'linebreak' makes sure wrapping happens at words, not in the middle of them
