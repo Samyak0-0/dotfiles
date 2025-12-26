@@ -273,6 +273,12 @@ require('lazy').setup({
   --
   -- See `:help gitsigns` to understand what the configuration keys do
   {
+    'ellisonleao/glow.nvim',
+    ft = 'markdown',
+    config = true,
+    -- or specify configuration options
+  },
+  {
     'goolord/alpha-nvim',
     event = 'VimEnter',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
