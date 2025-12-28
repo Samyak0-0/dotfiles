@@ -7,6 +7,7 @@ vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle)
 vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
 
 vim.keymap.set('n', '<leader>c', 'gcc', { remap = true })
+vim.keymap.set('v', '<leader>c', 'gcc', { remap = true })
 
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
