@@ -6,6 +6,15 @@ return {
     local alpha = require 'alpha'
     local dashboard = require 'alpha.themes.dashboard'
 
+    -- dashboard.section.header.opts = {
+    --   position = 'center',
+    -- }
+    dashboard.config.layout = {
+      { type = 'padding', val = 1 },
+      dashboard.section.header,
+      { type = 'padding', val = 1 },
+      dashboard.section.buttons,
+    }
     dashboard.section.header.val = {
       '                               ....                                         ',
       "                            ,;;'''';;,                    ,;;;;,            ",
@@ -32,10 +41,10 @@ return {
       '                                      ;;;      ;;;;,;;.   `;;;;             ',
       '                                       `;;      ;;;;;,;;   ;;;;             ',
       "                                         `'      `;;;;,;;  ;;;;             ",
-      '                                                    `;;,;, ;;;;             ',
-      '                                                       ;;, ;;;;             ',
-      "                                                         ';;;;;             ",
-      '                                                          ;;;;;             ',
+      -- '                                                    `;;,;, ;;;;             ',
+      -- '                                                       ;;, ;;;;             ',
+      -- "                                                         ';;;;;             ",
+      -- '                                                          ;;;;;             ',
     }
 
     dashboard.section.buttons.val = {
