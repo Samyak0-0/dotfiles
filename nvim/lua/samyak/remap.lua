@@ -2,8 +2,8 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>r', '<C-r>')
 vim.keymap.set('n', '<leader>w', '<C-w>')
-vim.keymap.set('n', '<leader>Q', vim.cmd.q)
-vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle)
+vim.keymap.set('n', '<leader>Q', vim.cmd.q, { desc = 'Quit' })
+vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle, { desc = 'Nvim Tree Toggle' })
 vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
 
 vim.keymap.set('n', '<leader>c', 'gcc', { remap = true, desc = 'comment line' })
