@@ -6,14 +6,14 @@ vim.keymap.set('n', '<leader>Q', vim.cmd.q)
 vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle)
 vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
 
-vim.keymap.set('n', '<leader>c', 'gcc', { remap = true })
-vim.keymap.set('v', '<leader>c', 'gcc', { remap = true })
+vim.keymap.set('n', '<leader>c', 'gcc', { remap = true, desc = 'comment line' })
+vim.keymap.set('v', '<leader>c', 'gcc', { remap = true, desc = 'comment highlighted section' })
 
 vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
-vim.keymap.set('n', '<leader>dd', '"_dd')
-vim.keymap.set('v', '<leader>d', '"_d')
+vim.keymap.set('n', '<leader>dd', '"_dd', { desc = 'delete without saving' })
+vim.keymap.set('v', '<leader>d', '"_d', { desc = 'delete without saving' })
 
 -- Toggle line wrapping with <leader>w
 vim.keymap.set('n', '<leader>o', ':set wrap!<CR>', { desc = 'Toggle word wrap', silent = true })
@@ -36,6 +36,6 @@ vim.diagnostic.config {
 }
 
 -- Diagnostic keymaps
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic float' })
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'prev diagnostic' })
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'next diagnostic' })
