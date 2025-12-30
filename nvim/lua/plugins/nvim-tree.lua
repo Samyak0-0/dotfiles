@@ -7,9 +7,9 @@ return {
   },
   config = function()
     require('nvim-tree').setup {
-      hijack_directories = {
-        enable = false,
-      },
+      -- hijack_directories = {
+      --   enable = false,
+      -- },
     }
   end,
 }
