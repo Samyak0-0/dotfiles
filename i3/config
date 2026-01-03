@@ -279,3 +279,8 @@ bindsym $mod+Shift+Print exec --no-startup-id maim -s | xclip -selection clipboa
 
 bindsym $mod+z exec --no-startup-id rofi -show emoji
 
+# Binidings for webcam
+for_window [title="video0 - mpv"] floating enable, border none
+for_window [title="video0 - mpv"] sticky enable
+
+bindsym $mod+c exec --no-startup-id camtoggle
