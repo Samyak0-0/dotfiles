@@ -1,0 +1,2 @@
+#!/bin/bash
+pkill -f /dev/video || mpv --geometry=-20-60% --autofit=25% --profile=low-latency --vf=hflip --untimed --no-cache /dev/video0
