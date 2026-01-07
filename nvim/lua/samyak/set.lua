@@ -36,4 +36,4 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Set the statusline to display file info, then position/percentage info on the right
-vim.opt.statusline = '%F%=%l/%L %P'
+-- vim.opt.statusline = '%F%=%l/%L %P'

@@ -28,7 +28,9 @@ return { -- Collection of various small independent plugins/modules
     -- cursor location to LINE:COLUMN
     ---@diagnostic disable-next-line: duplicate-set-field
     statusline.section_location = function()
-      return '%2l:%-2v'
+      return '%-v:%l/%L|%P'
+      -- return '%-2v:%2l/%2L|%P'
+      -- return '%F'
     end
 
     -- ... and there is more!
