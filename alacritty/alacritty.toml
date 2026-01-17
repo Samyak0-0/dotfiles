@@ -30,6 +30,6 @@ save_to_clipboard = true
 
 [keyboard]
 bindings = [
-    { key = "Space", mods = "Control", mode = "~Search", action = "ToggleViMode" },
+    { key = "Space", mods = "Shift", mode = "~Search", action = "ToggleViMode" },
     # { key = "Space", mods = "Control|Shift", mode = "~Search", action = "ToggleViMode" },
 ]
