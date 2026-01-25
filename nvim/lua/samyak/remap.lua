@@ -19,6 +19,8 @@ vim.keymap.set('v', '<leader>d', '"_d', { desc = 'delete without saving' })
 vim.keymap.set('n', '<leader>o', ':set wrap!<CR>', { desc = 'Toggle word wrap', silent = true })
 vim.keymap.set('n', '<leader>ya', ':%y<CR>', { desc = 'Copy the entire file', silent = true })
 
+vim.keymap.set('x', '<leader>p', '"_dP', { desc = 'Paste without overwriting register' })
+
 -- Optional: You can also toggle the 'linebreak' and 'showbreak' options for better control
 -- 'linebreak' makes sure wrapping happens at words, not in the middle of them
 -- 'showbreak' displays a character at the start of a wrapped line
