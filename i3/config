@@ -206,7 +206,7 @@ default_floating_border pixel 0
 #gaps inner 5
 #gaps outer 10
 
-set $bg-color 	         #2f343f
+set $bg-color 	         #77eb67
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
