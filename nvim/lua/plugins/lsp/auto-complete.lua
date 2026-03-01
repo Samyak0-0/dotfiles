@@ -42,6 +42,7 @@ return { -- Autocompletion
       -- ['<C-k>'] = { 'select_prev', 'fallback' }, -- 'default' (recommended) for mappings similar to built-in completions
       ['<C-j>'] = { 'scroll_documentation_down' },
       ['<C-k>'] = { 'scroll_documentation_up' },
+      ['`'] = { 'hide', 'fallback' },
       --   <c-y> to accept ([y]es) the completion.
       --    This will auto-import if your LSP supports it.
       --    This will expand snippets if the LSP sent a snippet.
