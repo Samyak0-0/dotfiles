@@ -290,3 +290,5 @@ for_window [title="video0 - mpv"] sticky enable
 
 bindsym $mod+c exec --no-startup-id camtoggle
 bindsym $mod+Shift+c exec xdotool key Caps_Lock
+
+bindsym $mod+Shift+v exec diodon
