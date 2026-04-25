@@ -29,6 +29,8 @@ exec_always --no-startup-id autotiling -w 1 2
 exec_always --no-startup-id xinput set-prop $(xinput list --id-only "$(xinput list --name-only | grep -i touchpad | head -n1)") "libinput Natural Scrolling Enabled" 1
 exec_always --no-startup-id xinput set-prop $(xinput list --id-only "$(xinput list --name-only | grep -i touchpad | head -n1)") "libinput Scrolling Pixel Distance" 40
 exec_always --no-startup-id brightnessctl set 100%
+exec_always --no-startup-id shutdown "21:30"
+exec_always --no-startup-id bat-low-alert.sh
 #exec --no-startup-id redshift -l 4.43333:11.23333
 for_window [class="Ulauncher"] floating enable, border pixel 0
 
