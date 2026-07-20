@@ -1,9 +1,9 @@
 vim.g.mapleader = ' '
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex, { desc = 'Open Netrw' })
+vim.keymap.set('n', '<leader>nr', vim.cmd.Ex, { desc = 'Open Netrw' })
 vim.keymap.set('n', '<leader>r', '<C-r>')
 vim.keymap.set('n', '<leader>w', '<C-w>')
-vim.keymap.set('n', '<leader>Q', vim.cmd.q, { desc = 'Quit' })
-vim.keymap.set('n', '<leader>qt', vim.cmd.qa, { desc = 'Quit All / Exit Nvim' })
+vim.keymap.set('n', '<leader>q', vim.cmd.q, { desc = 'Quit' })
+vim.keymap.set('n', '<leader>Q', vim.cmd.qa, { desc = 'Quit All / Exit Nvim' })
 vim.keymap.set('n', '<leader>ut', vim.cmd.UndotreeToggle, { desc = 'Undo Tree Toggle' })
 vim.keymap.set('n', '<leader>t', vim.cmd.NvimTreeToggle, { desc = 'Nvim Tree Toggle' })
 vim.keymap.set({ 'n', 'v' }, '<leader>a', vim.lsp.buf.code_action, { desc = 'LSP Code Action' })
