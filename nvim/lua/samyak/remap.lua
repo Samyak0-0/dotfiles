@@ -46,3 +46,9 @@ vim.diagnostic.config {
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open diagnostic float' })
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'prev diagnostic' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'next diagnostic' })
+
+-- terminal mode keymaps
+-- vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>tv', ': botright vsplit term://bash | NvimTreeClose<CR>', { desc = 'open vertical split terminal', silent = true })
+vim.keymap.set('n', '<leader>th', ': botright split term://bash | NvimTreeClose<CR>', { desc = 'open horizontal split terminal', silent = true })
+vim.keymap.set('n', '<leader>te', ':edit term://bash<CR>', { desc = 'open terminal', silent = true })
