@@ -168,7 +168,7 @@ for_window [workspace="5"] floating enable
 for_window [workspace="6"] floating enable
 
 assign [class="firefox"] $ws1
-assign [class="Code"] $ws2
+assign [class="code"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="obs"] $ws9
 assign [class="Spotify"] $ws10
@@ -286,7 +286,8 @@ bindsym Shift+Print exec --no-startup-id maim -s ~/Pictures/screenshot_$(date +%
 # Region to clipboard
 bindsym $mod+Shift+Print exec --no-startup-id maim -s | xclip -selection clipboard -t image/png && notify-send "Screenshot copied to clipboard"
 
-bindsym $mod+z exec --no-startup-id rofi -show emoji
+bindsym Mod1+e exec --no-startup-id rofi -show emoji
+bindsym $mod+z exec boomer
 
 # Binidings for webcam
 for_window [title="video0 - mpv"] floating enable, border none
