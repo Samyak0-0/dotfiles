@@ -38,5 +38,32 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 -- Set the statusline to display file info, then position/percentage info on the right
 -- vim.opt.statusline = '%F%=%l/%L %P'
 
+-- vim.opt.wildmode = 'noselect:longest,full'
+vim.opt.wildmode = 'noselect:full,full'
+
 vim.opt.title = true
 vim.opt.titlestring = 'neovim'
+
+require('gruvbox').setup {
+  overrides = {
+    SignColumn = { bg = '#282828' },
+    FoldColumn = { bg = '#282828' },
+
+    -- Diagnostic signs
+    diagnosticsignerror = { bg = '#282828', fg = '#fb4934' },
+    diagnosticsignwarn = { bg = '#282828', fg = '#fabd2f' },
+    diagnosticsigninfo = { bg = '#282828', fg = '#83a598' },
+    diagnosticsignhint = { bg = '#282828', fg = '#8ec07c' },
+
+    -- Disable cursor-word highlighting
+    CursorWord = { bg = 'NONE' },
+    LspReferenceText = { bg = 'NONE' },
+    LspReferenceRead = { bg = 'NONE' },
+    LspReferenceWrite = { bg = 'NONE' },
+
+    YankHighlight = { bg = '#d3869b', fg = '#282828', bold = true }, -- Aqua
+  },
+}
+vim.cmd.colorscheme 'gruvbox'
+
+vim.opt.winborder = 'rounded'
