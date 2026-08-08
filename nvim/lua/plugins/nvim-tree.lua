@@ -21,7 +21,7 @@ return {
       vim.keymap.set('n', 'y', api.fs.copy.node, opts 'Copy File')
       vim.keymap.set('n', 'gn', api.fs.copy.filename, opts 'Copy File Name')
 
-      vim.keymap.set('n', '<CR>', function()
+      vim.keymap.set('n', 'o', function()
         local node = api.tree.get_node_under_cursor()
 
         api.node.open.edit()
