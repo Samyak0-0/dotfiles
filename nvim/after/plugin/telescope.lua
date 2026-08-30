@@ -12,7 +12,7 @@ local function find_files_vsplit()
   builtin.find_files {
     attach_mappings = function(prompt_bufnr)
       actions.select_default:replace(function()
-        vim.cmd 'NvimTreeClose'
+        -- vim.cmd 'NvimTreeClose'
         actions.select_vertical(prompt_bufnr)
       end)
       return true
@@ -24,7 +24,7 @@ local function find_files_split()
   builtin.find_files {
     attach_mappings = function(prompt_bufnr)
       actions.select_default:replace(function()
-        vim.cmd 'NvimTreeClose'
+        -- vim.cmd 'NvimTreeClose'
         actions.select_horizontal(prompt_bufnr)
       end)
       return true

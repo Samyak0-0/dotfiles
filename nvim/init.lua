@@ -221,3 +221,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     }
   end,
 })
+
+-- vim.g.netrw_preview = 1
+-- vim.g.netrw_liststyle = 3
+-- vim.g.netrw_winsize = 20
+-- vim.g.netrw_browse_split = 4
+-- vim.g.netrw_banner = 0
+-- vim.g.netrw_usetab = 1
+-- -- vim.keymap.set('n', '<leader>ns', '<Plug>NetrwShrink', { remap = false })
+-- vim.keymap.set('n', '<leader>ns', ':call netrw#Shrink()<CR>', { remap = false })
